@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyQR.MyQRPage">
+
+    <StackLayout
+		Orientation="Vertical"
+		HorizontalOptions="Fill"
+		VerticalOptions="Fill">
+        <Image
+			Source="xamarin_banner.png"
+			HeightRequest="90"
+			Aspect="AspectFill"
+			Margin="0,20,0,0" />
+        <StackLayout
+			Margin="10,20,10,0"
+			HorizontalOptions="FillAndExpand"
+			Orientation="Horizontal">
+            <Button
+				HorizontalOptions="FillAndExpand"
+				Text="Scan It"
+				Clicked="Scan_Clicked"
+				FontSize="14"
+				BackgroundColor="#F44336"
+				TextColor="White" />
+            <Button
+				HorizontalOptions="FillAndExpand"
+				Text="Generate"
+				FontSize="14"
+				Clicked="Write_Clicked"
+				BackgroundColor="#33691E"
+				TextColor="White" />
+        </StackLayout>
+        <Image
+			x:Name="barcodeImage"
+			Source="qr_bg.png"
+			VerticalOptions="FillAndExpand"
+			Aspect="AspectFit" />
+    </StackLayout>
+</ContentPage>

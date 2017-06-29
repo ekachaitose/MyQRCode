@@ -13,7 +13,7 @@ namespace MyQR
         {
             InitializeComponent();
 
-            MainPage = new MyQR.MainPage();
+            MainPage = new MyQR.MyQRPage();
         }
 
         protected override void OnStart()
